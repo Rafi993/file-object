@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 
-const createFileObject = require("./index");
-const getContent = require("./getContent");
-
 const getChildren = (currentPath) => () => {
+  const createFileObject = require("./index");
+  const getContent = require("./getContent");
+
   return fs.readdirSync(currentPath).map((item) => {
     const fullPath = path.join(currentPath, item);
     const stat = fs.lstatSync(fullPath);

@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 
-const createFileObject = require("./index");
-const getContent = require("./getContent");
-
 const get = (target, property) => {
+  const createFileObject = require("./index");
+  const getContent = require("./getContent");
+
   const value = Reflect.get(target, property);
 
   // Check if it is existing property and return it
