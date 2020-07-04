@@ -10,6 +10,10 @@ are present in the memory in that object (even they are not).
 
 ## Usage
 
+```
+$ npm i node-file-object
+```
+
 ```javascript
 const createFileObject = require("./index");
 
