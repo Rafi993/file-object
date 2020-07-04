@@ -1,12 +1,18 @@
 {
   "name": "node_file_object",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Access file system like you access any objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "files",
+    "fs",
+    "file system",
+    "directory",
+    "text"
+  ],
   "author": "rafi993",
   "license": "MIT",
   "repository": {
