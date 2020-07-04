@@ -15,7 +15,7 @@ $ npm i node_file_object
 ```
 
 ```javascript
-const createFileObject = require("./index");
+const createFileObject = require("node_file_object");
 
 // Path is optional if not speficied '/' will be used
 // path supplied here should be a folder path
