@@ -8,6 +8,30 @@ Sometimes you want to write a small script that deals files and it can be annoyi
 system API's. This Project provides proxied object that allow you to act as if the files and folders
 are present in the memory in that object (even they are not).
 
+## Usage
+
+```javascript
+const createFileObject = require("./index");
+
+// Path is optional if not speficied '/' will be used
+// path supplied here should be a folder path
+const fileObject = createFileObject({ path: "/home/username" });
+
+// List all files and folders in directory as strings
+console.log(Object.keys(fileObject));
+
+// List all files and folders as array of objects with additional attributes
+console.log(fileObject.getChildren());
+
+// READ the content of a given file
+console.log(fileObject[".zshrc"].getContent());
+
+// Walk through file system like you do on an object
+// /home/username/Documents/notes.md
+const documents = fileObject["Documents"];
+console.log(documents["notes.md"].getContent());
+```
+
 ## Downsides?
 
 Since it is meant to function like direct object access it uses synchronous file API's which might cause performance issues when used in
