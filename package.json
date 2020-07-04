@@ -1,12 +1,20 @@
 {
-  "name": "file_object",
-  "version": "1.0.0",
-  "description": "",
+  "name": "node_file_object",
+  "version": "1.0.1",
+  "description": "Access file system like you access any objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "rafi993",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafi993/file-object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rafi993/file-object/issues"
+  },
+  "homepage": "https://github.com/Rafi993/file-object#readme"
 }

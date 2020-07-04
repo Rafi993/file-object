@@ -11,7 +11,7 @@ are present in the memory in that object (even they are not).
 ## Usage
 
 ```
-$ npm i node-file-object
+$ npm i node_file_object
 ```
 
 ```javascript
