@@ -8,11 +8,13 @@ Sometimes you want to write a small script that deals files and it can be annoyi
 system API's. This Project provides proxied object that allow you to act as if the files and folders
 are present in the memory in that object (even they are not).
 
-## Usage
+## Installation
 
 ```
 $ npm i node_file_object
 ```
+
+## Usage
 
 ```javascript
 const createFileObject = require("node_file_object");
@@ -38,6 +40,4 @@ console.log(documents["notes.md"].getContent());
 
 ## Downsides?
 
-Since it is meant to function like direct object access it uses synchronous file API's which might cause performance issues when used in
-large projects (since it has to wait for IO to complete). But this project will prove usefull for smaller scripts where this does
-not matter.
+Since it is meant to function like direct object access it uses synchronous file API's which might cause performance issues when used in large projects (since it has to wait for IO to complete). But this project will prove useful for smaller scripts where this does not matter.
